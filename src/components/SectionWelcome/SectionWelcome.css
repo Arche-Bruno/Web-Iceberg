@@ -1,0 +1,87 @@
+.container-sectionWelcome{
+    background-image: url('./../../imgs/architecture-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 100%;
+   padding: 0.2rem;
+
+
+}
+.sectionWelcome{
+    padding: 3.5rem 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 213, 0, 0.8);
+ 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.sectionWelcome-title-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    
+}
+.sectionWelcome-title-content span{
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+  font-family: "Poppins", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+    color: #404040;
+ 
+}
+.sectionWelcome-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.sectionWelcome-title-content h2{
+    letter-spacing: 0.1rem;
+    color: #404040;
+    font-size: 32px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+}
+.sectionWelcome-btn{
+   
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: #404040;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+
+.sectionWelcome-btn:hover{
+    color: #f2c206;
+}
+.sectionWelcome-btn.hideBtnWelcome{
+    opacity: 0;
+
+}
+@media screen and (min-width:780px) {
+    .container-sectionWelcome{
+     
+    }
+}

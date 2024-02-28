@@ -1,0 +1,134 @@
+.container-sectionVideo {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+ 
+  
+
+  margin: 3rem 0rem;
+
+  
+}
+.sectionVideo {
+   
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0.7rem;
+  
+
+}
+.sectionVideo-video {
+  width: 100%;
+  height: 100%;
+
+
+  border: 2px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+ 
+  overflow: hidden;
+  
+}
+.sectionVideo-video:hover {
+    border: 2px solid #f2c206;
+}
+.sectionVideo-video-btn {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+.sectionVideo-video-btn.sectionVideo-hideVideo{
+    display: none;
+}
+.sectionVideo-btn-icon {
+  color: #f2c306b1;
+}
+
+.sectionVideo-btn-icon:hover  {
+    color: #f2c206; /* Cambia el color del icono */
+    transform: scale(1.1); /* Escala el elemento con la clase .video */
+}
+
+.sectionVideo-video .video {
+ 
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+ display: grid;
+ place-content: center;
+
+  transition: 0.2s linear;
+
+
+}
+.video img {
+  display: block;
+  width: 100%;
+}
+
+.popup-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  display: none;
+
+ 
+}
+.popup-video.show {
+  display: block;
+}
+.popup-video .videoPop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.7rem;
+  border: 2px solid #f2c206;
+  object-fit: cover;
+  width: 95%;
+
+  margin: 0 auto;
+  
+}
+.popup-video span {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 50px;
+  color: #fff;
+  font-weight: bolder;
+  z-index: 100;
+  cursor: pointer;
+}
+.popup-video span:hover{
+    color: #f2c206;
+}
+@media screen and (min-width: 768px) {
+  .popup-video .videoPop{
+    max-width: 700px;
+  }
+  .sectionVideo{
+    height: 600px;
+  }
+  .sectionVideo-video {
+    max-height: 600px;
+  }
+ 
+}

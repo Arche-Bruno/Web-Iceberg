@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oxygen:wght@300;400;700&display=swap');
+.content-slide{
+    position: absolute;
+    top:40%;
+    left: 5%;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.content-slide h2{
+    color: #f2c206;
+    font-size: 30px;
+    font-family: "Anton", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+    -webkit-text-stroke:0.5px #000 ;
+    -webkit-text-fill:#f2c206;
+}
+
+.content-slide-content span{
+    color: white;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-top:0.5rem;
+    margin-bottom: 1.3rem;
+    opacity: 0;
+    animation: animate 1s 0.3s ease-in-out 1 forwards;
+  
+}
+.content-slide h3{
+    color: white;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top:0.5rem;
+    margin-bottom: 1.3rem;
+    opacity: 0;
+    font-size: 20px;
+    animation: animate 1s 0.3s ease-in-out 1 forwards;
+    -webkit-text-stroke:0.7px #000 ;
+    -webkit-text-fill:white;
+}
+.content-slide button{
+    max-width: 300px;
+    font-size: 16px;
+    background-color: #f2c206;
+     padding: 1rem 1.5rem;
+     border-radius: 0.5rem;
+     border: none;
+     color: white;
+     font-weight: 700;
+     opacity: 0;
+     animation: animate 1s 0.6s  ease-in-out 1 forwards;
+     cursor: pointer;
+    border: 1px solid transparent;
+}
+.content-slide button:hover{
+    border: 1px solid #fff;
+    background-color: #f2c306bc;
+}
+.content-slide-content{
+    display: none;
+}
+@keyframes animate{
+    from {
+      opacity: 0;
+      transform: translate(0,100px);
+      filter: blur(33px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+
+    }
+}
+@media screen and (min-width:780px) {
+    .content-slide-content {
+        display: block;
+    }
+    .content-slide-content span {
+        max-width: 800px; /* Establece el ancho máximo deseado */
+        display: inline-block;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: normal;
+        font-size: 24px;
+      color: #f2c206;
+        -webkit-text-stroke:0.5px #000 ;
+        -webkit-text-fill:#f2c206;
+    }
+    
+    
+    .content-slide{
+        position: absolute;
+        top:20%;
+        left: 5%;
+    }
+    .content-slide h2{
+        color: #f2c206;
+        font-size: 75px;
+       
+       
+    }
+    .content-slide h3{
+       
+      font-size: 50px;
+    }
+    .content-slide button{
+        font-size: 20px;
+        margin-top:2rem;
+
+    
+    }
+}

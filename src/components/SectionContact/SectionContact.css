@@ -1,0 +1,269 @@
+.container-sectionContact{
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8F8;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+.sectionContact{
+    width: 100%;
+   
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+   
+
+}
+.sectionContact-boletin{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+   
+
+}
+.sectionContact-dataUser{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   align-items: center;
+   
+}
+.sectionContact-label-subTitle{
+    
+    font-family: "Oxygen", sans-serif; 
+    text-transform: uppercase;
+    color: #404040;
+ 
+}
+label{
+    display: flex;
+    
+}
+.sectionContact-sub{
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: #404040;
+   
+}
+.sectionContact-title{
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: #f2c206;
+}
+.sectionContact-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    display: flex;
+    max-width: 500px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.sectionContact-input input{
+    width: 100%;
+    border: none;
+    padding: 1.5rem 1rem;
+    border: 2px solid transparent;
+    font-size: 19px;
+    font-weight: 300;
+    font-family: "Oxygen", sans-serif;
+  transition: border 0.2s ease-in-out;
+}
+.sectionContact-input input:hover{
+   border: 2px solid #EEC400;
+}
+.sectionContact-input input:focus{
+ outline: none;
+    border: 2px solid #EEC400;
+}
+.sectionContact-input button{
+    width: 100%;
+    max-width: 120px;
+    padding: 1.5rem 1rem;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #404040;
+  border: none;
+  
+  cursor: pointer;
+  background-color: #EEC400;
+  border: 2px solid transparent;
+  transition: background-color 0.2s ease-in-out,border-color 0.3s ease, opacity 0.3s ease;
+
+}
+.sectionContact-input button:hover{
+ 
+ opacity: .9;
+
+ background-color: transparent;
+ border: 2px solid #f2c206;
+ font-size: 16px;
+}
+.sectionContact-dataUser{
+    background-color:#EEC400;
+   width: 100%;
+   max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 8rem;
+  
+    background-color: rgba(213, 184, 22, 0.945);
+}
+.sectionContact-dataUser-container{
+   padding-top: 0rem;
+    width: 100%;
+    height: 100%;
+ 
+  background-image: url("../../imgs/map2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  
+  clip-path: polygon(0 2rem, 100% 0, 100% 100%, 0 100%);
+}
+
+
+.sectionContact-dataUser-inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sectionContact-dataUser h2{
+   
+
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    font-size: 49px;
+    color: #404040;
+    align-self: flex-start;
+}
+.sectionContact-dataUser label{
+  width: 100%;
+}
+.sectionContact-dataUser input{
+    padding: 1rem 0.5rem;
+    border: none;
+
+    border-radius: 1rem;
+   width: 100%;
+   border: 2px solid transparent;
+   font-size: 19px;
+   font-weight: 300;
+   font-family: "Oxygen", sans-serif;
+}
+.sectionContact-dataUser input:focus{
+    outline: none;
+    border: 2px solid #404040;
+}
+.sectionContact-btn{
+    align-self: flex-start;
+    padding: 1.6rem 3rem;
+    background-color: #404040;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.sectionContact-btn:hover{
+   opacity: .9;
+}
+.sectionContact-contactMethods{
+    width: 100%;
+    
+    max-width: 1100px;
+}
+.sectionContact-contactMethods ul{
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    
+}
+.sectionContact-contactMethods-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.sectionContact-contactMethods-info span{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #404040;
+}
+.sectionContact-contactMethods-info a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Oxygen", sans-serif;
+}
+.sectionContact-contactMethods ul li{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    gap: 1rem;
+ 
+
+}
+.sectionContact-contactMethods ul li button{
+    width: 50px;
+   
+    height:50px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+      border-radius: 0.5rem;
+}
+.contactMethods-icon{
+    color: #EEC400;
+    font-size: 3rem;
+}
+@media screen and (min-width:780px) {
+    .sectionContact-boletin{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+
+
+
+    }
+
+    .sectionContact-label{
+        grid-column: 1/3;
+    }
+    .sectionContact-input{
+        grid-column: 3/-1;
+    }
+
+    .sectionContact-dataUser-inputs{
+        flex-direction: row;
+    }
+}
+@media screen and (min-width:1080px) {
+    .sectionContact-contactMethods ul{
+        padding: 0rem 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

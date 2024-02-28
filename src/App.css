@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.container-app{
+  width: 100%;
+  min-height: 100vh;
+
+}
+header{
+
+  height: 100%;
+  max-height: 550px;
+
+ 
+}
+.name-empresa{
+  color: #EEC400;
+  font-weight: 900;
+  font-size: 18px;
+}
+.sectionClients-card{
+  background-color: #F7F7F7;
+}
+.sectionAboutUs-card{
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  max-height: 700px;
+  margin: 2rem auto;
+  background-color: #FFF;
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: repeat(4,1fr);
+  place-items: center;
+  place-content: center;
+}
+.one:first-child{
+  grid-column: 1/8;
+  grid-row: 1/-1;
+}
+.two:nth-child(2){
+  grid-column: 4/-1;
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.two button{
+  padding: 1.5rem 4rem;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #404040;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #EEC400;
+}
+.two button:hover{
+  opacity: .9;
+}
+@media screen and (min-width:780px) {
+  header{
+    max-height: 950px;
+  }
+}
+@media screen and (min-width:1100px) {
+   
+  .one:first-child{
+    grid-column: 1/6;
+    grid-row: 1/-1;
+  }
+  .two:nth-child(2){
+    grid-column: 4/-1;
+    grid-row: 1/-1;
+  }
+ 
+}
