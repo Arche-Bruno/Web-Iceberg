@@ -17,7 +17,7 @@
     font-style: normal;
     opacity: 0;
     animation: animate 1s ease-in-out 1 forwards;
-    -webkit-text-stroke:0.5px #000 ;
+    -webkit-text-stroke:0.1px #000 ;
     -webkit-text-fill:#f2c206;
 }
 
@@ -89,16 +89,19 @@
         overflow-wrap: break-word;
         word-wrap: break-word;
         white-space: normal;
-        font-size: 24px;
-      color: #f2c206;
+        font-size: 29px;
+        font-family: "Oxygen", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+      color: #fff;
         -webkit-text-stroke:0.5px #000 ;
-        -webkit-text-fill:#f2c206;
+        -webkit-text-fill:#fff;
     }
     
     
     .content-slide{
         position: absolute;
-        top:20%;
+        top:15%;
         left: 5%;
     }
     .content-slide h2{

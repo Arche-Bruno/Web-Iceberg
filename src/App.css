@@ -3,7 +3,44 @@
 .container-app{
   width: 100%;
   min-height: 100vh;
+position: relative;
+}
+.whatsapp-button {
+  z-index: 99999;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: green; /* Color de fondo del botón (cambia esto según tus preferencias) */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+  animation: jump 2s ease-out alternate infinite ;
 
+ border: 2px solid transparent;
+}
+
+@keyframes jump{
+  from{
+  transform: translateY(0);
+  }
+  to{
+transform: translateY(-20px);
+  }
+}
+
+.whatsapp-button:hover{
+  background-color: #F7F7F7;
+  animation-play-state: paused;
+  border: 2px solid green;
+
+}
+.whatsapp-button img {
+  width: 85%;
 }
 header{
 

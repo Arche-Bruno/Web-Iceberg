@@ -20,37 +20,34 @@ const SectionContact = () => {
     <div className="container-sectionContact">
       <section>
         <div className="sectionContact">
-          <form action="" className="sectionContact-boletin">
-            <div className="sectionContact-label">
-              <span className="sectionContact-label-subTitle">
-                Mantente al día
-              </span>
-
-              <label htmlFor="">
-                {" "}
-                <span className="sectionContact-sub">Suscribete</span>{" "}
-                <span className="sectionContact-title">al boletín</span>
-              </label>
-            </div>
-
-            <div className="sectionContact-input">
-              <input type="email" placeholder="ingresa tu correo electronico" />
-              <button>Unirme</button>
-            </div>
-          </form>
+        <form action="" className="sectionContact-boletin">
+    <div className="sectionContact-label">
+      <span className="sectionContact-label-subTitle">
+        Mantente al día
+      </span>
+      <label htmlFor="emailInput">
+        <span className="sectionContact-sub">Suscribete</span>{" "}
+        <span className="sectionContact-title">al boletín</span>
+      </label>
+    </div>
+    <div className="sectionContact-input">
+      <input type="email" id="emailInput" placeholder="ingresa tu correo electrónico" />
+      <button>Unirme</button>
+    </div>
+  </form>
 
   <div className="sectionContact-dataUser-container">
 
   <form action="" className="sectionContact-dataUser">
             <h2>Contactanos</h2>
             <div className="sectionContact-dataUser-inputs">
-              <label htmlFor="">
-                <input type="text" placeholder="Ingrese su Nombre" />
-              </label>
-              <label htmlFor="">
-                <input type="email" placeholder="Ingrese su email" />
-              </label>
-            </div>
+        <label htmlFor="nameInput" >
+          <input type="text" id="nameInput" placeholder="Ingrese su Nombre" />
+        </label>
+        <label htmlFor="emailInput2">
+          <input type="email" id="emailInput2" placeholder="Ingrese su email" />
+        </label>
+      </div>
 
             <label htmlFor="">
               <Textarea
@@ -82,34 +79,8 @@ const SectionContact = () => {
                     >
                       😍
                     </IconButton>
-                    <IconButton
-                      variant="outlined"
-                      color="neutral"
-                      onClick={addEmoji("👍")}
-                    >
-                      👍
-                    </IconButton>
-                    <IconButton
-                      variant="outlined"
-                      color="neutral"
-                      onClick={addEmoji("🏖")}
-                    >
-                      🏖
-                    </IconButton>
-                    <IconButton
-                      variant="outlined"
-                      color="neutral"
-                      onClick={addEmoji("😍")}
-                    >
-                      😍
-                    </IconButton>
-                    <Button
-                      variant="outlined"
-                      color="neutral"
-                      sx={{ ml: "auto" }}
-                    >
-                      See all
-                    </Button>
+                 
+                  
                   </Box>
                 }
                 endDecorator={

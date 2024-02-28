@@ -28,7 +28,7 @@ section{
     max-width: 450px;
     margin: 0 auto;
     display: grid;
-    padding: 3rem 2rem;
+    padding: 2rem ;
     border-radius: 1rem;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(3,1fr);

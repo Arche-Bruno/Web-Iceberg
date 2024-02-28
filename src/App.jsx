@@ -98,9 +98,23 @@ function App() {
       });
     }
   };
+  // Estado para controlar la visibilidad del botón de WhatsApp
+  const [showWhatsAppButton, setShowWhatsAppButton] = useState(true);
 
+  // Función para manejar el clic en el botón de WhatsApp
+  // Función para manejar el clic en el botón de WhatsApp
+  const handleWhatsAppClick = () => {
+    // Abre el enlace de WhatsApp con el número de teléfono correcto
+    window.open('https://wa.me/51987635060', '_blank');
+  }
   return (
     <div className="container-app">
+        {/* Botón de WhatsApp */}
+        {showWhatsAppButton && (
+        <div className="whatsapp-button" onClick={handleWhatsAppClick}>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/897px-WhatsApp.svg.png" alt="WhatsApp" />
+      </div>
+      )}
       <header>
         <Nav></Nav>
 
