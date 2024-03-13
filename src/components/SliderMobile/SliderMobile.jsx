@@ -34,7 +34,7 @@ const SliderMobile = () => {
         setTranslateValue(0);
       }
       setKey((prevKey) => prevKey + 1); // Cambiar el key en cada cambio
-    }, 6000);
+    }, 10000);
 
     return () => {
       clearInterval(slider);
